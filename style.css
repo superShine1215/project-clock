@@ -62,7 +62,7 @@ body {
 .clock {
   height: 250px;
   width: 250px;
-  border: 2px solid var(--primary-color);
+  border: 3px solid var(--primary-color);
   border-radius: 50%;
   position: relative;
   margin-bottom: 2rem;
@@ -119,6 +119,39 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.time-text > span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.time-text .twelve {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.time-text .three {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+}
+
+.time-text .six {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.time-text .nine {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  transform: translateY(-50%);
 }
 
 .time {
